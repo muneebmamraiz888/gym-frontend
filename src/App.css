@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 6%;
+  background: #151515;
+  border-bottom: 1px solid #292929;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.logo span,
+.hero h1 span {
+  color: #ff4d24;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-links a,
+.footer > a:last-child {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.footer a:hover {
+  color: #ff4d24;
+}
+
+.register-btn,
+.main-btn {
+  display: inline-block;
+  background: #ff4d24;
+  color: white;
+  padding: 13px 19px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 590px;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+  background:
+    linear-gradient(90deg, #101010 8%, rgba(16,16,16,.82) 48%, rgba(16,16,16,.2)),
+    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=85')
+    center/cover;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.subtitle {
+  color: #ff4d24;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.hero-text {
+  max-width: 540px;
+  color: #ddd;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.section {
+  padding: 85px 7%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: clamp(28px, 4vw, 38px);
+  margin-bottom: 25px;
+}
+
+.section-intro {
+  max-width: 700px;
+  margin: auto;
+  color: #bbb;
+  line-height: 1.9;
+}
+
+.dark-section {
+  background: #171717;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.card {
+  flex: 1 1 230px;
+  max-width: 360px;
+  padding: 30px 24px;
+  text-align: left;
+  background: #202020;
+  border: 1px solid #353535;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-bottom: 17px;
+}
+
+.card p {
+  color: #bbb;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.plan-card {
+  text-align: center;
+}
+
+.plan-card h2 {
+  color: #ff4d24;
+  margin: 18px 0;
+}
+
+.plan-card .main-btn {
+  margin-top: 8px;
+}
+
+.featured {
+  border: 2px solid #ff4d24;
+}
+
+.popular-label {
+  display: inline-block;
+  color: #ff4d24;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  max-width: 500px;
+  margin: 30px auto 0;
+  padding: 30px;
+  text-align: left;
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.join-form input,
+.join-form select {
+  width: 100%;
+  padding: 13px;
+  color: white;
+  background: #101010;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font: inherit;
+}
+
+.join-form .main-btn {
+  width: 100%;
+}
+
+.form-note {
+  margin-top: 22px;
+  color: #bbb;
+}
+
+.form-note a {
+  color: #ff4d24;
+}
+
+.contact-section p {
+  color: #bbb;
+  margin: 12px 0;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 6%;
+  background: #080808;
+  color: #999;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 18px 5%;
+  }
+
+  .nav-links {
+    gap: 14px;
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: 500px;
+    padding: 60px 6%;
+  }
+
+  .section {
+    padding: 65px 6%;
+  }
+
+  .join-form {
+    padding: 22px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* Smooth card hover effect */
+.service-card,
+.plan-card,
+.trainer-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover,
+.plan-card:hover,
+.trainer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(255, 90, 31, 0.25);
+}
+
+}

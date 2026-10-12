@@ -1,0 +1,70 @@
+.register-page {
+  min-height: 100vh;
+  padding: 40px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #101010, #29201d);
+  color: white;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 480px;
+  padding: 35px;
+  background: #1b1b1b;
+  border: 1px solid #383838;
+  border-radius: 12px;
+}
+
+.register-form h1 {
+  margin-bottom: 10px;
+}
+
+.register-form h1 span {
+  color: #ff4d24;
+}
+
+.register-form p {
+  color: #bbbbbb;
+  margin-bottom: 24px;
+}
+
+.register-form label {
+  display: block;
+  margin: 16px 0 8px;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea {
+  width: 100%;
+  padding: 12px;
+  background: #101010;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font: inherit;
+}
+
+.register-form button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  background: #ff4d24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-form .login-text {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.login-text a {
+  color: #ff4d24;
+}
